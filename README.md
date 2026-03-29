@@ -31,7 +31,9 @@ Log returns are assumed to be normally distributed. Parameters are estimated dir
    - Distribution of outcomes
 
 ## Results
-The simulation produces a distribution of possible future prices, allowing an estimation of the expected value, quantification of uncertainty and probability-based risk analysis
+The simulation produces a distribution of possible future prices, allowing an estimation of the expected value, quantification of uncertainty and probability-based risk analysis.
+This is the plot obtained for the monte carlo simulations:
+!['Simulation'](simulation.png)
 
 ## Future Improvements
 - Vectorised simulation for performance optimisation
