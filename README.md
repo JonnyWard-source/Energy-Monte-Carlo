@@ -51,8 +51,8 @@ Visually the histogram can appear slightly asymmetric due to sampling noise, but
 - yfinance
 
 ## How to Run
-‘’’bash
-pip install -r Requirements.txt
+‘’’bash<br>
+pip install -r Requirements.txt<br>
 Python Monte_carlo_simulation.py
 
 ## Author
