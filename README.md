@@ -5,7 +5,7 @@ This project models and simulates future energy prices using stochastic processe
 
 ## Model
 Price dynamics are modelled using Geometric Brownian Motion (GBM):<br>
-!['equation 2'](equation 2.png)<br>
+!['equation2'](equation2.png)<br>
 where:
 - μ is the drift
 - σ is the volatility
