@@ -18,7 +18,7 @@ Log returns are assumed to be normally distributed. Parameters are estimated dir
 2. **Preprocessing**
    Log returns are computed: log(Pₜ/Pₜ₊₁)
 3. **Parameter Estimation**
-   drift (μ) = mean of log returns
+   drift (μ) = mean of log returns,
    Volatility (σ) = standard deviation of log returns
 4. **Simulation**
    Future price paths are generated using Monte Carlo simulation:<br>
