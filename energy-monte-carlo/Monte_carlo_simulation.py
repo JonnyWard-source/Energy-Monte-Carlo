@@ -22,7 +22,10 @@ def compute_log_returns(prices: pd.Series) -> pd.Series:
     """
     Compute log returns from price data.
     """
-    return np.log((prices/prices.shift(1)).dropna())
+    with np.errstate(divide = 'ignore', invalid = 'ignore'):
+        returns = np.log(prices/prices.shift(1))
+    returns = returns.replace([np.inf, -np.inf], np.nan)
+    return returns.dropna()
 
 def estimate_parameters(returns: pd.Series) -> tuple:
     """
