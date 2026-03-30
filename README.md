@@ -21,8 +21,8 @@ Log returns are assumed to be normally distributed. Parameters are estimated dir
    drift (μ) = mean of log returns
    Volatility (σ) = standard deviation of log returns
 4. **Simulation**
-   Future price paths are generated using Monte Carlo simulation:
-   !['equation'](equation.png)
+   Future price paths are generated using Monte Carlo simulation:<br>
+   !['equation'](equation.png)<br>
    Where Z ~ N(0,1)
 5. **Analysis**
    - Expected future price
