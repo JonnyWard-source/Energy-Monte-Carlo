@@ -4,8 +4,8 @@
 This project models and simulates future energy prices using stochastic processes and Monte Carlo methods. Historical price data is used to estimate model parameters, and multiple future price paths are generated to analyse uncertainty and risk.
 
 ## Model
-Price dynamics are modelled using Geometric Brownian Motion (GBM):
-dSₜ = μ Sₜ dt + σ Sₜ dWₜ
+Price dynamics are modelled using Geometric Brownian Motion (GBM):<br>
+!['equation 2'](equation 2.png)<br>
 where:
 - μ is the drift
 - σ is the volatility
