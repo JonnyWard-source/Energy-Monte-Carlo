@@ -5,25 +5,24 @@ This project models and simulates future energy prices using stochastic processe
 
 ## Model
 Price dynamics are modelled using Geometric Brownian Motion (GBM):
-dS_t = μ S_t dt + σ S_t dW_t
-
+dSₜ = μ Sₜ dt + σ Sₜ dWₜ
 where:
 - μ is the drift
 - σ is the volatility
-- W_t is a Wiener process
+- Wₜ is a Wiener process
 Log returns are assumed to be normally distributed. Parameters are estimated directly from historical data
 
 ## Methodology
 1. **Data Collection**
    Historical data is downloaded from Yahoo Finance
 2. **Preprocessing**
-   Log returns are computed: log(P_t/P_{t-1})
+   Log returns are computed: log(Pₜ/Pₜ₊₁)
 3. **Parameter Estimation**
    drift (μ) = mean of log returns
    Volatility (σ) = standard deviation of log returns
 4. **Simulation**
    Future price paths are generated using Monte Carlo simulation:
-   S_{t+dt} = S_t * exp((μ - 0.5σ^2)Δt + σsqrt(Δt)Z)
+   !['equation'](equation.png)
    Where Z ~ N(0,1)
 5. **Analysis**
    - Expected future price
