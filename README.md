@@ -9,7 +9,7 @@ Price dynamics are modelled using Geometric Brownian Motion (GBM):<br>
 where:
 - μ is the drift
 - σ is the volatility
-- Wₜ is a Wiener process
+- Wₜ is a Wiener process<br>
 Log returns are assumed to be normally distributed. Parameters are estimated directly from historical data
 
 ## Methodology
