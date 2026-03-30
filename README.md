@@ -16,7 +16,7 @@ Log returns are assumed to be normally distributed. Parameters are estimated dir
 1. **Data Collection**
    Historical data is downloaded from Yahoo Finance
 2. **Preprocessing**
-   Log returns are computed: log(Pₜ/Pₜ₊₁)
+   Log returns are computed: log(Pₜ/Pₜ₋₁)
 3. **Parameter Estimation**
    drift (μ) = mean of log returns,
    Volatility (σ) = standard deviation of log returns
