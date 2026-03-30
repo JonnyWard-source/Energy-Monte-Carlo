@@ -34,6 +34,9 @@ Log returns are assumed to be normally distributed. Parameters are estimated dir
 The simulation produces a distribution of possible future prices, allowing an estimation of the expected value, quantification of uncertainty and probability-based risk analysis.
 This is the plot obtained for the monte carlo simulations:
 !['Simulation'](simulation.png)
+This is the distribution of the final prices:
+!['Distribution'](distribution.png)
+Visually the histogram can appear slightly asymmetric due to sampling noise, but the right tail extends further than the left, indicating a mild positive skew. This is consistent with the lognormal nature of the model, although the skew is not very pronounced for this time horizon. If the time horizon/volatility increased, the underlying Brownian Motion would have a higher variance so, when exponentiated, this will amplify the positive values more the negative ones, making the skew more pronounced.
 
 ## Future Improvements
 - Vectorised simulation for performance optimisation
